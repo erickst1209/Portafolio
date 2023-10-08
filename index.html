@@ -1,12 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="main.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Portafolio</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body class="dark">
+    <headre class="header">
+      <div class="switches">
+        <div id="toggle-theme" class="toggle-theme">
+          <img id="toggle-icon" src="assets/icons/sun.svg" alt="icon theme" class="toggle-theme__icon">
+          <p id="toggle-text" class="toggle-theme__text">Light mode</p>
+        </div>
+        <div id="flags" class="flags" data-language="es">
+          <div class="flags__item">
+            <img class="flags__img" src="assets/icons/mx.svg" alt="">
+          </div>
+        </div>
+        <div id="flags" class="flags" data-language="en">
+          <div class="flags__item">
+            <img class="flags__img" src="assets/icons/us.svg" alt="">
+          </div>
+        </div>
+      </div>
+      <div id="toggle-colors" class="colors">
+        <div data-color="hsl(214,84%,56%)" class="colors__item colors__item--blue"></div>
+        <div data-color="hsl(115, 84%, 56%)" class="colors__item colors__item--green"></div>
+        <div data-color="hsl(281, 83%, 36%)" class="colors__item colors__item--purple"></div>
+        <div data-color="hsl(24, 80%, 52%)" class="colors__item colors__item--orange"></div>
+      </div>
+    </headre>
+    <main class="main">
+      <section class="column column--left">
+        <article class="card card--profile">
+          <div class="card__image-container">
+            <img src="./assets/images/yo.jpg" alt="">
+          </div>
+          <div class="card__header">
+            <h2 class="card__title">Erick sillas</h2>
+            <p class="card__subtitle">Programador Backend</p>
+          </div>
+          <div class="card__body">
+            <div class="card__link">
+              <i class="fas fa-envelope icon"></i>
+              <a href="mailto:erisillas1288@gmail.com">erisillas1288@gmail.com</a>
+            </div>
+            <div class="card__link">
+              <i class="fas fa-phone-alt icon"></i>
+              <a href="tel:6562648795">6562648795</a>
+            </div>
+            <p class="card__text">
+              aqui pongo mi descripcion
+              
+            </p>
+          </div>
+        </article>
+        <article class="card card--experience">
+          <h2 class="card__title">Experiencia laboral</h2>
+          <div class="experience">
+            <img src="./assets/images/logo.png" alt="logo" class="experience__image">
+            <div class="experience__info">
+              <p class="experience__time">Marzo 2022 - Current</p>
+              <h3 class="experience__job">Operador</h3>
+              <p class="experience__">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+        </article>
+        <article class="card card">
+          <h2 class="card__title">Hobbies</h2>
+          <div class="card__image-container">
+            <img src="./assets/images/hobbie.jpg"/>
+          </div>
+          <h3 class="hobbie__title">biking</h3>
+          <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </article>
+      </section>
+      <section class="column column--rigth">
+        <!-- tarjeta de frontend -->
+        <article class="card">
+          <h2 class="card__title">Frontend</h2>
+          <small>Años de experiencia</small>
+          <div class="skills">
+          <div class="skills__header">
+            <span class="skills__star-level">0</span>
+            <span class="skills__star-level">3</span>
+          </div>
+          <div class="skills">
+            <div class="skills__item">
+                <p class="skills__tech">HTML</p>
+                <div class="skills__bar skills__bar--70"></div>
+              </div>
+              <div class="skills__item">
+                <p class="skills__tech">CSS</p>
+                <div class="skills__bar skills__bar--40"></div>
+              </div>
+              <div class="skills__item">
+                <p class="skills__tech">JAVASCRIPT</p>
+                <div class="skills__bar skills__bar--80"></div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <!-- tarjeta de backend -->
+        <article class="card">
+          <h2 class="card__title">Backend</h2>
+          <small>Años de experiencia</small>
+          <div class="skills">
+          <div class="skills__header">
+            <span class="skills__star-level">0</span>
+            <span class="skills__star-level">3</span>
+          </div>
+          <div class="skills">
+            <div class="skills__item">
+                <p class="skills__tech">JAVA</p>
+                <div class="skills__bar skills__bar--10"></div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <h2 class="card__title">Backend</h2>
+          <small>Años de experiencia</small>
+          <div class="skills">
+          <div class="skills__header">
+            <span class="skills__star-level">0</span>
+            <span class="skills__star-level">3</span>
+          </div>
+          <div class="skills">
+            <div class="skills__item">
+                <p class="skills__tech">JAVA</p>
+                <div class="skills__bar skills__bar--10"></div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <!-- tarjetas de proyectos -->
+        <article class="card card--project">
+          <div class="card__image-container">
+            <img src="./assets/images/project.jpg" alt="landing page" class="card__image">
+          </div>
+          <div class="proyect">
+            <div class="proyect__tags">
+              <span class="proyect__tag">#HTML</span>
+              <span class="proyect__tag">#CSS</span>
+              <span class="proyect__tag">#JAVASCRIPT</span>
+              <span class="proyect__tag">#JAVA</span>
+              <span class="proyect__tag">#RESPONSIVE</span>
+            </div>
+          </div>
+          <h2 class="card__title">Landing page</h2>
+          <p class="card__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+          <p class="card__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+          <div class="bottons">
+            <a href="#" class="button button--primary">Demo</a>
+            <a href="#" class="button button--ghost">Code</a>
+          </div>
+        </article>
+      </section>
+      </section>
+    </main>
+
+    <script src="js/scripts.js"></script>
+  </body>
 </html>
