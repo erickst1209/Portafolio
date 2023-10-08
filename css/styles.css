@@ -134,7 +134,7 @@ body.dark{
     gap: .5em;
  }
 
- @media screen and (min-width:720px) {
+ @media screen and (min-width:767px) {
     .main{
         grid-template-columns: min-content 1fr;
     }
@@ -145,7 +145,7 @@ body.dark{
     gap:0.5em;
  }
 
- @media screen and (min-width:720px) {
+ @media screen and (min-width:767px) {
     .column--rigth{
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, min-content);
@@ -189,7 +189,7 @@ body.dark{
  }
 
  
- @media screen and(min-width: 760px) {
+ @media screen and(min-width: 767px) {
     .card--proyect{
         display: grid;
         grid-template-columns: min-content 1fr;
@@ -304,7 +304,7 @@ body.dark{
  }
 
  
- @media screen and(min-width: 760px) {
+ @media screen and(min-width: 767px) {
     .proyect{
         margin-left: 2em;
      }
@@ -317,7 +317,7 @@ body.dark{
     font-size:.6rem;
     width: 275px;
  }
- @media screen and(min-width: 760px) {
+ @media screen and(min-width: 767px) {
     .proyect__tags{
         width:325px;
         font-size:0.8rem;
